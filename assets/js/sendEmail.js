@@ -10,7 +10,7 @@ function sendemail(){
 const serviceID = "service_oh3c5zz";
 const templateId ="template_5ix7nl5";
 
-emailjs.send(serviceID, templateId).then(res =>{
+emailjs.send(serviceID, templateId,{params}).then(res =>{
     document.getElementById("name").value ="";
     document.getElementById("email").value ="";
     document.getElementById("message").value ="";
