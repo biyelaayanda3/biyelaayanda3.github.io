@@ -1,7 +1,7 @@
 function sendemail(){
     var params ={
         name: document.getElementById("name").value,
-        subject: "Contact Us email",
+        subject: 'Contact Us email',
         email:document.getElementById("email").value,
         message: document.getElementById("message").value
     };
@@ -16,6 +16,6 @@ emailjs.send(serviceID,templateId,params).then(res =>{
     document.getElementById("message").value ="";
     console.log(res);
     alert("message sent");
-}).catch((error)=>
-    console.log(error));
+}).catch((err)=>
+    console.log(err));
 }
